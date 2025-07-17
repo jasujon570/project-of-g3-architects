@@ -5,6 +5,13 @@
     font-family: "Work Sans", sans-serif;
 }
 
+.navbar,
+.banner,
+main,
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 /* Shared styles */
 .primary-btn {
@@ -15,6 +22,14 @@
     border-radius: 8px;
     padding: 20px 25px;
     border: none;
+}
+
+.banner-title,
+.section-title,
+.sponsor-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 .flex {
@@ -31,13 +46,6 @@
 
 .text-primary {
     color: #FF900E;
-}
-
-.navbar,
-.banner,
-main {
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 .navbar {
@@ -72,13 +80,6 @@ main {
     max-width: 862px;
     margin: 0 auto;
     text-align: center;
-}
-
-.banner-title,
-.section-title {
-    color: #131313;
-    font-size: 4rem;
-    font-weight: bold;
 }
 
 .banner-description {
@@ -173,30 +174,43 @@ main {
     line-height: 26px;
 }
 
+/* Our Sponsor section styles */
+.our-sponsor {
+    margin-bottom: 130px;
+}
 
+.sponsor-info {
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.sponsor-description {
+    line-height: 26px;
+    margin-top: 24px;
+}
 
+.sponsor-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin-top: 50px;
+}
 
+.sponsor-companies img {
+    filter: grayscale(100%);
+}
 
+/* Footer Section Styles */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-content {
+    border-radius: 8px;
+}
+.footer {
+    padding: 39px 410px;
+    text-align: center;
+    font-size: 1.25rem;
+}
 
 
 /* Breakpoints: 320px, 480px, 768px, 1024px, and 1200px */
@@ -225,7 +239,8 @@ main {
 
     /* Team and Features Section */
 
-    .team-img-container {
+    .team-img-container,
+    .sponsor-companies {
         grid-template-columns: 1fr;
     }
 
@@ -263,6 +278,23 @@ main {
 
     .fact-cards {
         margin: 10px auto;
+    }
+
+    /* our sponsor section */
+    .sponsor-companies {
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .sponsor-title {
+        font-size: 3rem;
+    }
+
+    /* footer section style */
+
+    .footer {
+        padding: 20px;
+        font-size: 1rem;
     }
 }
 
@@ -330,6 +362,24 @@ main {
         margin: 10px auto;
     }
 
+    /* our sponsor section */
+
+    .sponsor-companies {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .sponsor-title {
+        font-size: 3rem;
+    }
+
+    /* footer section styles */
+
+    .footer {
+        padding: 20px;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -395,6 +445,22 @@ main {
     .fact-cards {
         margin: 10px auto;
     }
+
+    /* our sponsor section */
+
+    .sponsor-companies {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-items: center;
+    }
+
+    /* footer section styles */
+    
+    .footer {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
 }
 
 
@@ -431,7 +497,6 @@ main {
 
     .facts-container {
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 auto;
     }
 
     .section-description {
@@ -449,6 +514,22 @@ main {
         margin: 10px auto;
     }
 
+    /* our sponsor section */
+    .sponsor-companies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .sponsor-item-5 {
+        grid-column: span 2;
+    }
+
+    /* footer section styles */
+    
+    .footer {
+        padding: 30px;
+    }
 }
 
 
@@ -473,9 +554,9 @@ main {
     /* Some Facts Section Style */
 
     .facts-container {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 100px 0;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
     }
 
     .section-description {
@@ -485,5 +566,17 @@ main {
 
     .section-title {
         text-align: center;
+    }
+
+    /* our sponsor section */
+
+    .sponsor-companies {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* footer section styles */
+    
+    .footer {
+        padding: 30px;
     }
 }
