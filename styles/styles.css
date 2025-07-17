@@ -5,42 +5,175 @@
     font-family: "Work Sans", sans-serif;
 }
 
-header {
+
+/* Shared styles */
+.primary-btn {
+    background-color: #FF900E;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 20px 25px;
+    border: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.bg-light {
     background: rgba(255, 144, 14, 0.1);
 }
 
-nav {
+
+
+
+
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
-    min-height: 100vh;
 }
 
-.nav-container {
-    display: flex;
+.navbar {
     align-items: center;
     justify-content: space-between;
     padding: 50px 0 102px 0;
 }
 
-.logo {
+.brand {
     font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
 }
 
-.banner-navigation {
-    display: flex;
+.nav-links {
     gap: 30px;
 }
 
-.banner-navigation li {
+.nav-item {
     list-style: none;
 }
 
-.banner-navigation li a {
+.nav-link {
     text-decoration: none;
     font-size: 1.13rem;
     line-height: 26px;
     font-weight: 500;
     color: #424242;
+}
+
+.banner-content {
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.banner-description {
+    color: #727272;
+    line-height: 26px;
+    padding: 32px 0;
+}
+
+.banner-img {
+    width: 100%;
+    padding: 50px 0;
+}
+
+
+/* Breakpoints: 320px, 480px, 768px, 1024px, and 1200px */
+
+
+@media screen and (max-width: 320px) {
+
+    .navbar,
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .brand {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .navbar,
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-description {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-description {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 787px) and (max-width: 1024px) {
+    
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    
+    .nav-link {
+        font-size: 1.5rem;
+    }
 }
