@@ -74,7 +74,8 @@ main {
     text-align: center;
 }
 
-.banner-title {
+.banner-title,
+.section-title {
     color: #131313;
     font-size: 4rem;
     font-weight: bold;
@@ -130,8 +131,47 @@ main {
     margin: 24px 0 32px 0;
 }
 
+/* Some Facts Section Style */
 
+.some-facts {
+    padding: 130px 0 180px 0;
+}
 
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 100px 50px 0;
+}
+
+.fact-cards {
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fact-number {
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+}
+
+.fact-name {
+    font-size: 1.25rem;
+}
+
+.section-title {
+    margin-bottom: 24px;
+}
+
+.section-description {
+    max-width: 542px;
+    line-height: 26px;
+}
 
 
 
@@ -198,8 +238,32 @@ main {
         text-align: center;
     }
 
+    /* Some Facts Section Style */
 
 
+    .some-facts {
+        padding: 50px 0;
+    }
+
+    .facts-container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .section-description {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .fact-cards {
+        margin: 10px auto;
+    }
 }
 
 
@@ -239,10 +303,36 @@ main {
         text-align: center;
     }
 
+    /* Some Facts Section Style */
+
+
+    .some-facts {
+        padding: 50px 0;
+    }
+
+    .facts-container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .section-description {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .fact-cards {
+        margin: 10px auto;
+    }
 
 }
 
-@media screen and (min-width: 481px) and (max-width: 786px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
 
     .nav-links {
         gap: 10px;
@@ -261,10 +351,11 @@ main {
     }
 
 
-/* Team and Features Section */
+    /* Team and Features Section */
     .teams {
         flex-direction: column;
     }
+
     .team-img-container {
         grid-template-columns: 1fr;
     }
@@ -278,10 +369,36 @@ main {
         text-align: center;
     }
 
+    /* Some Facts Section Style */
+
+
+    .some-facts {
+        padding: 50px 0;
+    }
+
+    .facts-container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+
+    .section-description {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .fact-cards {
+        margin: 10px auto;
+    }
 }
 
 
-@media screen and (min-width: 787px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     .nav-links {
         gap: 20px;
@@ -291,7 +408,7 @@ main {
         font-size: 1.5rem;
     }
 
-/* Team and Features Section */
+    /* Team and Features Section */
     .teams {
         flex-direction: column;
     }
@@ -301,10 +418,36 @@ main {
     }
 
     .our-features {
-        margin: 20px 15px 0;
+        margin-top: 20px;
         text-align: center;
     }
 
+    /* Some Facts Section Style */
+
+
+    .some-facts {
+        padding: 50px 0;
+    }
+
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    .section-description {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .fact-cards {
+        margin: 10px auto;
+    }
 
 }
 
@@ -324,6 +467,23 @@ main {
 
     .our-features {
         margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Some Facts Section Style */
+
+    .facts-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 100px 0;
+    }
+
+    .section-description {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .section-title {
         text-align: center;
     }
 }
