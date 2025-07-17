@@ -25,12 +25,17 @@
     background: rgba(255, 144, 14, 0.1);
 }
 
+.text-gray {
+    color: #727272;
+}
 
-
-
+.text-primary {
+    color: #FF900E;
+}
 
 .navbar,
-.banner {
+.banner,
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -87,13 +92,81 @@
 }
 
 
+/* Team and Our Features Section Design */
+
+.teams {
+    margin: 0px 61px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
+    padding: 85px 0 130px 0;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+.our-features {
+    max-width: 537px;
+}
+
+.feature-titile {
+    font-size: 2.8rem;
+}
+
+.quick-list {
+    font-weight: 600;
+}
+
+.features {
+    font-weight: bold;
+}
+
+.feature-description {
+    line-height: 26px;
+    margin: 24px 0 32px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Breakpoints: 320px, 480px, 768px, 1024px, and 1200px */
 
 
 @media screen and (max-width: 320px) {
 
     .navbar,
-    .nav-links {
+    .nav-links,
+    .teams {
         flex-direction: column;
     }
 
@@ -110,13 +183,31 @@
         font-size: 2rem;
     }
 
+    /* Team and Features Section */
+
+    .team-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams {
+        margin: 0px;
+    }
+
+    .our-features {
+        margin: 0 15px;
+        text-align: center;
+    }
+
+
+
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
 
     .navbar,
-    .nav-links {
+    .nav-links,
+    .teams {
         flex-direction: column;
     }
 
@@ -133,10 +224,25 @@
         font-size: 1.5rem;
     }
 
+    /* Team and Features Section */
+
+    .team-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams {
+        margin: 0px;
+    }
+
+    .our-features {
+        margin: 20px 15px 0;
+        text-align: center;
+    }
+
+
 }
 
-@media screen and (max-width: 786px) {
-
+@media screen and (min-width: 481px) and (max-width: 786px) {
 
     .nav-links {
         gap: 10px;
@@ -154,13 +260,29 @@
         font-size: 1.5rem;
     }
 
+
+/* Team and Features Section */
+    .teams {
+        flex-direction: column;
+    }
+    .team-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams {
+        margin: 0px;
+    }
+
+    .our-features {
+        margin: 20px 15px 0;
+        text-align: center;
+    }
+
 }
 
 
-
-
 @media screen and (min-width: 787px) and (max-width: 1024px) {
-    
+
     .nav-links {
         gap: 20px;
     }
@@ -168,12 +290,40 @@
     .nav-link {
         font-size: 1.5rem;
     }
+
+/* Team and Features Section */
+    .teams {
+        flex-direction: column;
+    }
+
+    .teams {
+        margin: 0px;
+    }
+
+    .our-features {
+        margin: 20px 15px 0;
+        text-align: center;
+    }
+
+
 }
 
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    
+
     .nav-link {
         font-size: 1.5rem;
+    }
+
+
+    /* Team and Features Section */
+
+    .teams {
+        flex-direction: column;
+    }
+
+    .our-features {
+        margin-top: 20px;
+        text-align: center;
     }
 }
