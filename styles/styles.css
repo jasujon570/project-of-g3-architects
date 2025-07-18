@@ -26,7 +26,8 @@ footer {
 
 .banner-title,
 .section-title,
-.sponsor-title {
+.sponsor-title,
+.features-titile {
     color: #131313;
     font-size: 4rem;
     font-weight: bold;
@@ -127,10 +128,61 @@ footer {
     font-weight: bold;
 }
 
-.feature-description {
+.feature-description,
+.features-description {
     line-height: 26px;
     margin: 24px 0 32px 0;
 }
+
+/* Features section styles */
+
+
+#features-section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-container {
+    align-items: center;
+    gap: 140px;
+}
+.features-content {
+    max-width: 586px;
+}
+.feature-card {
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature-card .feature-card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #131313;
+}
+
+.feature-card-description {
+    line-height: 26px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#experience-badge {
+    padding: 45px 42px;
+    margin-left: -90px;
+    margin-top: -100px;
+}
+#experience-years {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 70px;
+}
+#experience {
+    font-weight: 600;
+    font-size: 1.56rem;
+    line-height: 40px;
+}
+
 
 /* Some Facts Section Style */
 
@@ -206,6 +258,7 @@ footer {
 .footer-content {
     border-radius: 8px;
 }
+
 .footer {
     padding: 39px 410px;
     text-align: center;
@@ -455,7 +508,7 @@ footer {
     }
 
     /* footer section styles */
-    
+
     .footer {
         padding: 20px;
         font-size: 1rem;
@@ -526,7 +579,7 @@ footer {
     }
 
     /* footer section styles */
-    
+
     .footer {
         padding: 30px;
     }
@@ -575,7 +628,7 @@ footer {
     }
 
     /* footer section styles */
-    
+
     .footer {
         padding: 30px;
     }
